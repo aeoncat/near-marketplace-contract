@@ -1,4 +1,6 @@
 import { Product, listedProducts } from './model';
+import { ContractPromiseBatch, context } from 'near-sdk-as';
+
 
 export function setProduct(product: Product): void {
     let storedProduct = listedProducts.get(product.id);
